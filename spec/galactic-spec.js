@@ -18,4 +18,24 @@ describe('Years', function() {
     let age = new Years(40, "jupiter");
     expect(age.calculateAge()).toEqual(3);
   });
+  it('calculate years left on mercury', function() {
+    let age = new Years(40, "mercury", 85);
+    console.log();
+    expect(age.yearsToLive()).toEqual(186);
+  });
+  it('calculate years left on venus', function() {
+    let age = new Years(40, "venus", 85);
+    console.log();
+    expect(age.yearsToLive()).toEqual(72);
+  });
+  it('calculate years left on mars', function() {
+    let age = new Years(40, "mars", 85);
+    console.log();
+    expect(age.yearsToLive()).toEqual(23);
+  });
+  it('calculate years left on jupiter', function() {
+    let age = new Years(40, "jupiter", 85);
+    console.log();
+    expect(age.yearsToLive()).toEqual(3);
+  });
 });
