@@ -3,6 +3,7 @@ import { Years } from './../src/galactic-calc.js';
 describe('Years', function() {
   it('calculate age based on chosen planet', function() {
     let age = new Years(40, "mercury");
+    console.log("age");
     expect(age.calculateAge()).toEqual(165);
   });
   // it('should find the day based the date', function() {
